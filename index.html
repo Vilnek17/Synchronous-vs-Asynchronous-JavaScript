@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./app.js"></script>
+    <style>
+        button {
+            width: 210px;
+            height: 40px;
+            font-size: 1.1em;
+            cursor: pointer;
+            background-color: #171717;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: all .4s;
+        }
+
+        button:hover {
+            border-radius: 5px;
+            transform: translateY(-10px);
+            box-shadow: 0 7px 0 -2px #f85959,
+                0 15px 0 -4px #39a2db,
+                0 16px 10px -3px #39a2db;
+        }
+
+        button:active {
+            transition: all 0.2s;
+            transform: translateY(-5px);
+            box-shadow: 0 2px 0 -2px #f85959,
+                0 8px 0 -4px #39a2db,
+                0 12px 10px -3px #39a2db;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>29. Запити, обробка подій, введення користувача</h1>
+
+    <h2>Title start from A</h2>
+    <div class="user-a"></div>
+    <h2>Title start from AB</h2>
+    <div class="user-ab"></div>
+
+    <button class="add-a">Title start from A</button>
+    <button class="add-ab">Title start from AB</button>
+    <button class="add-all">Title start from A and AB</button>
+</body>
+
+</html>
